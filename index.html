@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/">
     <link rel="stylesheet" href="/style.css">
     <script src="https://unpkg.com/lucide@latest"></script>
 </head>
@@ -12,6 +13,12 @@
         <!-- contenido dinamico -->
     </main>
     <aside class="c-nav">
+        <div class="c-nav-search">
+            <input type="text" id="search-bar" placeholder="Buscar películas..." oninput="buscarPeliculas(this.value)">
+            <button onclick="buscarPeliculas(document.getElementById('search-bar').value)">
+                <i data-lucide="search"></i>
+            </button>
+        </div>
         <button id="btn-home" class="c-nav-item" onclick="mostrarHome(); setActiveButton('btn-home')">
             <i data-lucide="home"></i> Home
         </button>

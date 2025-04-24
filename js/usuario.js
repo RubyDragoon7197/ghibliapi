@@ -1,11 +1,9 @@
 function mostrarUsuario() {
-    const app = document.getElementById("app");
+    const app = document.getElementById('app');
     app.innerHTML = `
-      <h2>Información del Usuario</h2>
-      <p>Nombre: GhibliFan</p>
-      <p>Películas favoritas: 3</p>
-      <p>Última visita: ${new Date().toLocaleDateString()}</p>
+        <h2>Perfil de Usuario</h2>
+        <p>Nombre: Totoro</p>
+        <p>Email: totoro@ghibli.com</p>
+        <p>Películas favoritas: Mi vecino Totoro, El viaje de Chihiro</p>
     `;
-    lucide.createIcons();
-  }
-  
+}
